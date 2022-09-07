@@ -1,14 +1,80 @@
-h3 {
-  color: blue; }
+img {
+  max-width: 100%; }
 
 header {
-  background-color: yellow; }
-  header div {
-    padding: 10px; }
-    header div h3 {
-      font-size: 30px; }
+  background-color: #0c0c0c; }
+  header nav {
+    display: flex;
+    align-items: center; }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; }
+      header nav ul a {
+        display: block;
+        padding: 8px;
+        line-height: 50px;
+        background: #0c0c0c;
+        color: white;
+        text-decoration: none; }
 
-a {
-  text-decoration: none; }
-  a:hover {
-    color: red; }
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  width: 85vw;
+  margin: 0 auto;
+  grid-template-rows: auto;
+  grid-template-areas: "fondo fondo" ". about"; }
+  .nosotros .fondo {
+    grid-area: fondo;
+    background: #ecc8fd;
+    background: linear-gradient(90deg, #ecc8fd 0%, #9c90fa 35%, #f389b1 100%); }
+    .nosotros .fondo .about {
+      grid-area: about;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .nosotros .fondo .about .nosotrosFoto {
+        grid-area: nosotrosFoto; }
+        .nosotros .fondo .about .nosotrosFoto .about h2 {
+          text-transform: uppercase;
+          font-size: 36px;
+          letter-spacing: 6px;
+          opacity: 0.9; }
+          .nosotros .fondo .about .nosotrosFoto .about h2 .about p {
+            padding-bottom: 15px;
+            font-weight: 300;
+            opacity: 0.7;
+            width: 60%;
+            line-height: 1.7; }
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    header nav {
+      display: flex;
+      flex-direction: column; }
+      header nav ul {
+        display: flex;
+        flex-direction: column; } }
+
+@media only screen and (max-width: 768px) {
+  .nosotros {
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-areas: "fondo" "about"; }
+    .nosotros .fondo {
+      max-width: 100%;
+      height: 100px; }
+      .nosotros .fondo .about h2 {
+        font-size: 15px;
+        margin-top: 50px;
+        text-align: center; }
+        .nosotros .fondo .about h2 .about p {
+          font-size: 14px;
+          text-align: center; } }
