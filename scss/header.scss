@@ -34,6 +34,7 @@ header{background-color: $nav-background;
     "fondo fondo"
     ". about";
     .fondo{
+        color: $color-titulo;
         grid-area: fondo;
         font-size: 5em;;
 .about{grid-area: about;
