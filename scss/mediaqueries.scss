@@ -9,6 +9,17 @@
     flex-direction: column;}
     }}}
 
+    @media only screen and (max-width: 768px) {
+        footer{display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        .contactanos{display: flex;
+        flex-direction: column;
+        ul{display: flex;
+        flex-direction: column;
+        }}}
+    
     @media only screen and (max-width: 768px){
         .nosotros{
             grid-template-columns: 1fr;
@@ -17,11 +28,5 @@
         .fondo{
             max-width: 100%;
             height: 100px;
-        .about h2{
-            font-size: 15px;
-            margin-top: 50px;
-            text-align: center;
-        .about p{
-            font-size: 14px;
-            text-align: center;
-    }}}}}
+            font-size: 40px;
+}}}}

@@ -1,6 +1,12 @@
 img {
   max-width: 100%; }
 
+h2 {
+  color: lightblue;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
 header {
   background-color: #0c0c0c; }
   header nav {
@@ -18,6 +24,9 @@ header {
         background: #0c0c0c;
         color: white;
         text-decoration: none; }
+        header nav ul a:hover {
+          background: pink;
+          transition: .5s; }
 
 .nosotros {
   display: grid;
@@ -29,26 +38,32 @@ header {
   grid-template-areas: "fondo fondo" ". about"; }
   .nosotros .fondo {
     grid-area: fondo;
-    background: #ecc8fd;
-    background: linear-gradient(90deg, #ecc8fd 0%, #9c90fa 35%, #f389b1 100%); }
+    font-size: 5em; }
     .nosotros .fondo .about {
       grid-area: about;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .nosotros .fondo .about .nosotrosFoto {
-        grid-area: nosotrosFoto; }
-        .nosotros .fondo .about .nosotrosFoto .about h2 {
-          text-transform: uppercase;
-          font-size: 36px;
-          letter-spacing: 6px;
-          opacity: 0.9; }
-          .nosotros .fondo .about .nosotrosFoto .about h2 .about p {
-            padding-bottom: 15px;
-            font-weight: 300;
-            opacity: 0.7;
-            width: 60%;
-            line-height: 1.7; }
+      display: flex; }
+
+footer {
+  background-color: #0c0c0c; }
+  footer .contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .contactanos ul {
+      list-style: none;
+      margin: 0;
+      padding: 20px;
+      display: flex; }
+      footer .contactanos ul a {
+        display: block;
+        padding: 24px;
+        line-height: 50px;
+        background: #0c0c0c;
+        color: white;
+        text-decoration: none; }
+        footer .contactanos ul a:hover {
+          background: pink;
+          transition: .5s; }
 
 @media only screen and (max-width: 768px) {
   header {
@@ -64,17 +79,24 @@ header {
         flex-direction: column; } }
 
 @media only screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    footer .contactanos {
+      display: flex;
+      flex-direction: column; }
+      footer .contactanos ul {
+        display: flex;
+        flex-direction: column; } }
+
+@media only screen and (max-width: 768px) and (max-width: 768px) {
   .nosotros {
     grid-template-columns: 1fr;
     width: 100%;
     grid-template-areas: "fondo" "about"; }
     .nosotros .fondo {
       max-width: 100%;
-      height: 100px; }
-      .nosotros .fondo .about h2 {
-        font-size: 15px;
-        margin-top: 50px;
-        text-align: center; }
-        .nosotros .fondo .about h2 .about p {
-          font-size: 14px;
-          text-align: center; } }
+      height: 100px;
+      font-size: 40px; } }

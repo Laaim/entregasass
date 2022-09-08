@@ -15,10 +15,13 @@ header{background-color: $nav-background;
             line-height: 50px;
             background: $nav-background;
             color: $nav-font-color;
-            text-decoration: none;}
+            text-decoration: none;
+            &:hover{
+                background: $link-hover-color;
+                transition: .5s;
         }
     }
-}
+}}}
 
 .nosotros{
     display: grid;
@@ -29,26 +32,10 @@ header{background-color: $nav-background;
     grid-template-rows: auto;
     grid-template-areas: 
     "fondo fondo"
-    ". about"
-    ;
+    ". about";
     .fondo{
         grid-area: fondo;
-        background: rgb(236,200,253);
-        background: linear-gradient(90deg, rgba(236,200,253,1) 0%, rgba(156,144,250,1) 35%, rgba(243,137,177,1) 100%);;
+        font-size: 5em;;
 .about{grid-area: about;
     display: flex;
-    justify-content: center;
-    align-items: center;
-.nosotrosFoto{grid-area: nosotrosFoto;
-.about h2{
-    text-transform: uppercase;
-    font-size: 36px;
-    letter-spacing: 6px;
-    opacity: 0.9;
-.about p{
-    padding-bottom: 15px;
-    font-weight: 300;
-    opacity: 0.7;
-    width: 60%;
-    line-height: 1.7;
-}}}}}}
+}}}
