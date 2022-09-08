@@ -24,6 +24,7 @@ header {
 
 .nosotros {
   display: grid;
+  text-align: center;
   grid-template-columns: 1fr 1fr;
   min-height: 90vh;
   width: 85vw;
@@ -33,7 +34,7 @@ header {
   .nosotros .fondo {
     color: lightpink;
     grid-area: fondo;
-    font-size: 5em; }
+    font-size: 8em; }
     .nosotros .fondo .about {
       grid-area: about;
       display: flex; }

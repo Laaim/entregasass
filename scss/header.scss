@@ -25,6 +25,7 @@ header{background-color: $nav-background;
 
 .nosotros{
     display: grid;
+    text-align: center;
     grid-template-columns: 1fr 1fr;
     min-height: 90vh;
     width: 85vw;
@@ -36,7 +37,7 @@ header{background-color: $nav-background;
     .fondo{
         color: $color-titulo;
         grid-area: fondo;
-        font-size: 5em;;
+        font-size: 8em;;
 .about{grid-area: about;
     display: flex;
 }}}
