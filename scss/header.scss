@@ -1,5 +1,3 @@
-
-
 header{background-color: $nav-background;
     nav { 
     display: flex;
@@ -20,8 +18,8 @@ header{background-color: $nav-background;
                 background: $link-hover-color;
                 transition: .5s;
         }
-    }
-}}}
+    }}}
+}
 
 .nosotros{
     display: grid;
@@ -41,3 +39,24 @@ header{background-color: $nav-background;
 .about{grid-area: about;
     display: flex;
 }}}
+
+.bannerIndex{
+    position:relative;
+}
+
+.fraseBanner{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.boton{
+    position:absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-70%, -70%);
+    background: white;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 30px;
+}
