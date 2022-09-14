@@ -34,3 +34,9 @@
         h1{display: none;
     iframe{max-width: 100%;}
         }    }}
+
+        /*MEDIA QUERIE PRODUCTOS */
+    @media only screen and (max-width: 768px){
+        .categorias{min-width: 100%;
+        }
+    }
