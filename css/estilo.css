@@ -27,26 +27,47 @@ header {
           transition: .5s; }
 
 footer {
-  background-color: #0c0c0c; }
+  background-color: white; }
   footer .contactanos {
     display: flex;
     align-items: center;
-    justify-content: center; }
-    footer .contactanos ul {
-      list-style: none;
-      margin: 0;
-      padding: 20px;
-      display: flex; }
-      footer .contactanos ul a {
-        display: block;
-        padding: 24px;
-        line-height: 50px;
-        background: #0c0c0c;
-        color: white;
-        text-decoration: none; }
-        footer .contactanos ul a:hover {
-          background: pink;
-          transition: .5s; }
+    justify-content: center;
+    justify-content: space-around; }
+
+.mail {
+  height: 27px;
+  width: 27px;
+  display: flex; }
+  .mail:hover {
+    background-color: lightblue; }
+
+.ig {
+  height: 27px;
+  width: 27px;
+  display: flex; }
+  .ig:hover {
+    background-color: pink; }
+
+.fb {
+  height: 27px;
+  width: 27px;
+  display: flex; }
+  .fb:hover {
+    background-color: blue; }
+
+.tiktok {
+  height: 27px;
+  width: 27px;
+  display: flex; }
+  .tiktok:hover {
+    background-color: grey; }
+
+.wpp {
+  height: 27px;
+  width: 27px;
+  display: flex; }
+  .wpp:hover {
+    background-color: green; }
 
 @media only screen and (max-width: 768px) {
   header {
